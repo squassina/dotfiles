@@ -1,0 +1,45 @@
+# Editor and IDE
+.swp
+.swo
+*~
+.DS_Store
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# OS specific
+Thumbs.db
+.cache/
+.local/
+
+# Temporary files
+*.tmp
+*.bak
+*.backup
+*.*~
+
+# Logs
+*.log
+*.out
+
+# Package managers
+node_modules/
+__pycache__/
+*.pyc
+*.pyo
+
+# Build artifacts
+*.o
+*.a
+*.so
+*.dylib
+debug/
+build/
+dist/
+
+# System files
+.DS_Store
+.swp
+.swo
+*~
