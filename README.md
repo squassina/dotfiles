@@ -198,6 +198,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 ## Thanks
 
+- [MangoWC](https://github.com/DreamMaoMao/mangowc) by DreamMaoMao
 - [Niri](https://github.com/YaLTeR/niri) by YaLTeR
 - [Noctalia](https://noctalia.dev) by the Noctalia team
 - Inspired by warm, cozy dark themes
