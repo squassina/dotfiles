@@ -22,7 +22,25 @@ This repository contains my daily-driver configurations for:
 
 ```
 .
-├── mango/              # MangoWC (Hyprland) configuration
+├── alacritty/          # Terminal emulator configuration
+│   ├── alacritty.toml  # Main config
+│   └── themes/         # Color themes
+│       └── noctalia.toml
+│
+├── cava/               # Audio visualizer configuration
+│   ├── shaders/        # GLSL fragment shaders
+│   │   ├── bar_spectrum.frag
+│   │   ├── eye_of_phi.frag
+│   │   ├── northern_lights.frag
+│   │   ├── pass_through.vert
+│   │   ├── spectrogram.frag
+│   │   └── winamp_line_style_spectrum.frag
+│   └── themes/         # Cava color themes
+│       ├── noctalia
+│       ├── solarized_dark
+│       └── tricolor
+│
+├── mango/              # MangoWC window manager configuration
 │   ├── config.conf     # Main config with sourced modules
 │   ├── keybindings.conf
 │   ├── appearance.conf
@@ -44,15 +62,16 @@ This repository contains my daily-driver configurations for:
 │       ├── layout.kdl
 │       ├── rules.kdl
 │       ├── misc.kdl
-│       └── autostart.kdl
+│       ├── autostart.kdl
+│       └── animation.kdl
 │
 └── noctalia/           # Noctalia shell configuration
     ├── settings.json   # Main shell settings
     ├── colors.json     # Color scheme
     ├── plugins.json    # Plugin configuration
     ├── user-templates.toml
-    ├── colorschemes/
-    └── plugins/        # Custom plugins
+    ├── colorschemes/   # Custom color schemes
+    └── plugins/        # Noctalia plugins
         ├── fancy-audiovisualizer/
         ├── network-indicator/
         ├── pomodoro/
@@ -72,18 +91,18 @@ This repository contains my daily-driver configurations for:
 - `brave` - Browser
 - `thunar` - File manager
 - `heroic` - Game launcher
-- `cliphist` - Clipboard history
 
 ### Optional
 - `wl-paste` - Wayland clipboard utilities
 - `qt6ct` - Qt6 theming
+- `cava` - Audio visualizer
 
 ## Installation
 
 ### 1. Clone this repo
 
 ```bash
-git clone https://github.com/yourusername/dotfiles.git ~/dotfiles
+git clone https://github.com/squassina/dotfiles.git ~/dotfiles
 cd ~/dotfiles
 ```
 
@@ -108,6 +127,9 @@ ln -sf ~/dotfiles/mango ~/.config/mango
 
 # Noctalia
 ln -sf ~/dotfiles/noctalia ~/.config/noctalia
+
+# Alacritty
+ln -sf ~/dotfiles/alacritty ~/.config/alacritty
 ```
 
 ### 4. Install dependencies
@@ -128,7 +150,7 @@ sudo pacman -S niri alacritty brave-bin thunar wl-clipboard
 # For Niri
 niri msg reload-config
 
-# For MangoWC - usually MOD+SHIFT+R or just restart the compositor
+# For MangoWC - usually MOD+SHIFT+R or restart the compositor
 ```
 
 ## Keybindings
@@ -191,6 +213,7 @@ Configure them in [noctalia/plugins.json](noctalia/plugins.json).
 - Everything is split into modular files - you can tweak individual aspects without touching the main configs
 - The noctalia theme is sourced in both compositors to keep things looking consistent
 - Keybindings have descriptions that show up in the hotkey overlay (press MOD+SHIFT+ESC)
+- Includes custom Cava audio visualizer shaders optimized for the noctalia color scheme
 
 ## License
 
@@ -200,6 +223,7 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 - [MangoWC](https://github.com/DreamMaoMao/mangowc) by DreamMaoMao
 - [Niri](https://github.com/YaLTeR/niri) by YaLTeR
+- [MangoWC](https://github.com/DreamMaoMao/mangowc) by DreamMaoMao
 - [Noctalia](https://noctalia.dev) by the Noctalia team
 - Inspired by warm, cozy dark themes
 
