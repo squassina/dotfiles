@@ -1,4 +1,4 @@
-# Noctalia Dotfiles
+# My Dotfiles
 
 My personal configuration files for a modern Linux desktop using **Niri** and **MangoWC** Wayland compositors with the **noctalia** desktop shell.
 
@@ -223,7 +223,6 @@ MIT License - See [LICENSE](LICENSE) for details.
 
 - [MangoWC](https://github.com/DreamMaoMao/mangowc) by DreamMaoMao
 - [Niri](https://github.com/YaLTeR/niri) by YaLTeR
-- [MangoWC](https://github.com/DreamMaoMao/mangowc) by DreamMaoMao
 - [Noctalia](https://noctalia.dev) by the Noctalia team
 - Inspired by warm, cozy dark themes
 
