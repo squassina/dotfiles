@@ -13,3 +13,9 @@
         match namespace="^noctalia-wallpaper*"
         place-within-backdrop true
     }
+    // Disable the hot corners.
+    gestures {
+        hot-corners {
+            off
+        }
+    }

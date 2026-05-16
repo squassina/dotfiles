@@ -9,14 +9,17 @@ binds {
     MOD+SHIFT+ESCAPE                     { show-hotkey-overlay; }
 
     // ─── Applications ───
-    MOD+RETURN                          hotkey-overlay-title="Open Terminal: Alacritty" { spawn "alacritty"; }
-    MOD+SPACE                           hotkey-overlay-title="Open App Launcher: Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
-    MOD+B                               hotkey-overlay-title="Open Browser: Brave" { spawn-sh "brave"; }
-    MOD+ALT+L                           hotkey-overlay-title="Lock Screen: noctalia lock" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
+    MOD+RETURN                          hotkey-overlay-title="Open Terminal" { spawn "foot"; }
+    MOD+SPACE                           hotkey-overlay-title="Open App Launcher" { spawn-sh "qs -c noctalia-shell ipc call launcher toggle"; }
+    MOD+B                               hotkey-overlay-title="Open Browser" { spawn-sh "brave"; }
+    MOD+L                               hotkey-overlay-title="Lock Screen" { spawn-sh "qs -c noctalia-shell ipc call lockScreen lock"; }
     MOD+H                               hotkey-overlay-title="Open Games: Heroic" { spawn-sh "heroic"; }
+    MOD+S                               hotkey-overlay-title="Open Games: Steam" { spawn-sh "steam"; }
+    MOD+J                               hotkey-overlay-title="Open Jan" { spawn-sh "Jan"; }
+    MOD+V                               hotkey-overlay-title="Open VS Code Insiders" { spawn-sh "code-insiders"; }
 
     // Please choose your own file manager.
-    MOD+E                             hotkey-overlay-title="File Manager: Thunar" { spawn-sh "thunar"; }
+    MOD+E                               hotkey-overlay-title="File Manager: Thunar" { spawn-sh "thunar"; }
 
     // ─── Audio Controls ───
     XF86AUDIORAISEVOLUME                allow-when-locked=true { spawn-sh "qs -c noctalia-shell ipc call volume increase"; }
